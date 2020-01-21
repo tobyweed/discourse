@@ -1,4 +1,5 @@
-.bkgd {
+.bene {
+    display: flex;
     background-color: lightgray;
     padding: 0 10px;
     border-radius: 50px;
