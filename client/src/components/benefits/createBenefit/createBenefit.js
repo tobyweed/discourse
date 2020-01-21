@@ -10,6 +10,7 @@ class CreateBenefit extends Component {
     }
 
     addBenefit() {
+        fetch(`/args`).then(response => console.log(response.json()))
         console.log("Success. Benefit added.");
     }
     render() {
