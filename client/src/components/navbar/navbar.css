@@ -1,0 +1,29 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    box-shadow: 0px 1px 10px grey;
+}
+
+.tabs{
+    list-style: none;
+}
+
+.tabs li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.tabs li a {
+    text-decoration: none;
+    
+}
