@@ -10,18 +10,18 @@ let db = new sqlite3.Database(DBSOURCE, err => {
 	} else {
 		console.log('Connected to the SQLite database.');
 		db.run(
-			`CREATE TABLE consequence (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name text,
-            benefit boolean
-            )`,
+			`CREATE TABLE consequences (
+	            consequence_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	            name text,
+	            benefit boolean
+			);`,
 			err => {
 				if (err) {
 					// Table already created
 				} else {
 					// Table just created, creating some rows
 					var insert =
-						'INSERT INTO consequence (name, benefit) VALUES (?,?,?)';
+						'INSERT INTO consequences (name, benefit) VALUES (?,?)';
 					db.run(insert, ['consequence1', true]);
 					db.run(insert, ['consequence2', true]);
 				}
