@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
 	// res.render('index', { title: 'Express' });
 });
 
-router.get('/args', (req, res, next) => {
-	var sql = 'select * from arg';
+router.get('/consequences', (req, res, next) => {
+	var sql = 'select * from consequence';
 	var params = [];
 	db.all(sql, params, (err, rows) => {
 		if (err) {
