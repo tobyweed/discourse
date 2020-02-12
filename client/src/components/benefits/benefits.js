@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 //import { render } from 'react-dom';
 import './benefits.css';
+import CreateBenefit from './createBenefit/createBenefit';
 
-const Benefit = ({ benefit }) => {
+class Benefit extends Component{
+    constructor(props) {
+        super(props)
+        
+    }
+    
+    render() {
         return (
-            <div class='bene'>
-                <p> {benefit} </p>
-            </div>
+            <div className='benefits'>
+                <div className='benefits__container'>
+                </div>
+                <div className='create-bene__container'>
+                    <CreateBenefit />
+                </div>
+            </div> 
+            
         )
+
+    }
 }
 
 export default Benefit;

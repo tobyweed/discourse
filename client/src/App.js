@@ -5,7 +5,7 @@ import './App.css';
 import NavigationBar from './components/navbar/navbar';
 import Proposition from './components/proposition/proposition';
 import BackgroundInformation from './components/background/background'
-import CreateBenefit from './components/benefits/createBenefit/createBenefit'
+import Benefit from './components/benefits/benefits'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       PROPOSITION'/>
       <h1>Background:</h1>
       <BackgroundInformation />
-      <CreateBenefit />
+      <Benefit bene="BENE EXAMPLE"/>
     </div>
     
   );
